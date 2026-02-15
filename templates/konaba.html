@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "styles/konaba.css" %}">
+
+<!-- Hero Section -->
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1 class="about-hero-title">Konaba TOTOM Gallery</h1>
+    <p class="about-hero-subtitle">
+      Ami nia galeria mak fatin ida ne'ebe totonistas hotu bele fahe sira nia kriatividade no arte hamutuk
+    </p>
+  </div>
+</section>
+
+<!-- About Content Section -->
+<section class="about-section">
+  <div class="about-container">
+    <!-- Story -->
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Ami nia Istória</h2>
+        <p>
+            Yaa TOTOM ne'e se la sala kria iha 2022 husi Cania(if im not wrong), momentu ne'eba piala dunia 2022, jadi gp ne kria atu roast deit Portugal se karik nia lakon, maibe nia la lakon anying sih.
+            Membru original ida mak Hau(Jessua), kania, LORD(ati), ho delos.
+            And the ami rona dehan avenio mos lgsta team Portugal entaun ami <strong>HATAMA</strong> hotu nia. Depois <strong>HATAMA</strong> hotu vladi and Jopra, 
+            Tama ikus mk binalin nain rua ida iha ne saa haluha tha sira2 nia naran.
+        </p>
+        <p>
+            Intinya Grupu ne'e hanesan gp meme saa, bahas buat oioin <i>gaming</i>, <i>drakor</i>,<i>anime</i>, rahasia negara no rahasia tetanga.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="{% static 'images/delio_2.jpeg' %}" alt="Gallery">
+      </div>
+    </div>
+    
+    <!-- Mission -->
+    <div class="about-content">
+      <div class="about-image">
+        <img src="{% static 'images/avenio_1.jpeg' %}" alt="Mission">
+      </div>
+      <div class="about-text">
+        <h2>Ami nia Misaun</h2>
+        <p>
+            Nia objetivu? palin halibur malu and share buat la jelas ba malu, no roast malu hotu maibe agora jarang sira tmba keknya
+            balun jagoan atu iha na karik bruhhhhhh.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Statement -->
+<section class="mission-section">
+  <div class="mission-container">
+    <h2 class="mission-title">Ami nia Vizaun</h2>
+    <p class="mission-text">
+      "Halo TOTOM Gallery sai fatin inspirasaun ba hotu ema ne'ebe adora arte, no kontinua suporta artistas lokál sira atu atinje sira nia potensial tomak." QOUTES GAYA NEE 
+    </p>
+  </div>
+</section>
+
+{% endblock %}

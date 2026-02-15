@@ -1,0 +1,263 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Hero Section */
+  .membru-hero {
+    min-height: 50vh;
+    background: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
+  
+  .membru-hero-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .membru-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #111;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .membru-hero-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Members Section */
+  .members-section {
+    padding: 5rem 2rem;
+    background: #fff;
+  }
+  
+  .members-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Member Card */
+  .member-card {
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .member-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .member-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f5f5f5;
+    flex-shrink: 0;
+  }
+  
+  .member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    flex: 1;
+  }
+  
+  .member-name {
+    font-size: 2rem;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-role {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  
+  .member-bio {
+    font-size: 1rem;
+    color: #999;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  
+  .member-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .member-stat {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .member-stat strong {
+    color: #111;
+    font-weight: 600;
+  }
+  
+  /* Gallery Grid */
+  .member-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .gallery-item {
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gallery-item-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .gallery-item-info {
+    padding: 1.25rem;
+  }
+  
+  .gallery-item-title {
+    font-size: 1rem;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery-item-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Lightbox Modal */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .lightbox.active {
+    display: flex;
+  }
+  
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+  }
+  
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    background: white;
+    color: #111;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  
+  .lightbox-close:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .membru-hero {
+      min-height: 40vh;
+      padding: 3rem 1.5rem;
+    }
+    
+    .members-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .member-header {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .member-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .member-bio {
+      text-align: center;
+    }
+    
+    .member-stats {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .member-gallery {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .member-card {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+    }
+  }

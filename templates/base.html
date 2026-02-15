@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIFACT TOTOM</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/delio_cut.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="{% static "styles/base.css" %}">
+</head>
+<body>
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      <a class="navbar-brand" href="{% url 'index' %}">TOTOM GALLERY</a>
+      
+      <button class="navbar-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="navbar-menu" id="navbarMenu">
+        <li>
+          <a class="navbar-link {% if request.resolver_match.url_name == 'index' %}active{% endif %}" 
+             href="{% url 'index' %}">Home</a>
+        </li>
+        <li>
+          <a class="navbar-link {% if 'about-totom' in request.path %}active{% endif %}" 
+             href="{% url 'konaba' %}">Konaba</a>
+        </li>
+        <li>
+          <a class="navbar-link {% if 'totom-members' in request.path  %}active{% endif %}" href="{% url 'membru' %}">Membru</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="content-wrapper">
+    {% block content %}{% endblock %}
+  </div>
+  
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+          <h3>TOTOM Gallery</h3>
+          <p>Portal Atu Hare'e Foto Galery Limited Edition husi Maun/bin-alin TOTONISTA sira.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">📘</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'konaba' %}">Konaba</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Membru</a></li>
+          </ul>
+        </div>
+                
+        <!-- Contact -->
+        <div class="footer-section">
+          <h3>Kontaktu</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+670">+670 7325 3837</a></li>
+            <li><a href="#">Dili, Timor-Leste</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 TOTOM Gallery | Dezenvolve Husi Si Gantent Jessua Pedro Erehn.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navbarMenu');
+      menu.classList.toggle('active');
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const navbar = document.querySelector('.custom-navbar');
+      const menu = document.getElementById('navbarMenu');
+      
+      if (!navbar.contains(event.target)) {
+        menu.classList.remove('active');
+      }
+    });
+    
+    // Close menu when clicking a link
+    document.querySelectorAll('.navbar-link').forEach(link => {
+      link.addEventListener('click', function() {
+        const menu = document.getElementById('navbarMenu');
+        menu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

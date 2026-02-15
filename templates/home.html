@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "styles/home.css" %}">
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        HELLO TOTONISTA
+      </h1>
+      
+      <p class="hero-subtitle">
+        Bemvindu mai iha Artifact Galery TOTOM nian enjoyy !!! 
+      </p>
+      <p class="text-muted">
+        Highlight mak ne'e mak okos/sorin ne saa  
+      </p>
+      
+      <div class="hero-cta">
+        <a href="#gallery" class="btn btn-primary">Hahu</a>
+        <a href="#about" class="btn btn-secondary">Aprende Liu Tan</a>
+      </div>
+    </div>
+    
+    <div class="image-grid">
+      <div class="grid-item">
+        <img src="{% static 'images/ati.png' %}" alt="Ati">
+      </div>
+      <div class="grid-item">
+        <img src="{% static 'images/delio.png' %}" alt="Delio">
+      </div>
+      <div class="grid-item">
+        <img src="{% static 'images/jopra.jpeg' %}" alt="Jopra">
+      </div>
+      <div class="grid-item">
+        <img src="{% static 'images/vladi.jpeg' %}" alt="Vladi">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+  <div class="gallery-container">
+    <div class="gallery-header">
+      <h2 class="gallery-title">Galeria Artifact</h2>
+      <p class="gallery-description">
+        Haree ami nia koleksaun totom artifact sira ne'ebe ita hotu kria hamutuk. MESAK BONITU/A DEIT BTW
+      </p>
+    </div>
+    
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">Hotu</button>
+      <button class="filter-tab" data-filter="recent">Foun</button>
+      <button class="filter-tab" data-filter="popular">Popular</button>
+      <button class="filter-tab" data-filter="featured">Destake</button>
+    </div>
+    
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Ati's Images -->
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/ati_1.jpeg' %}" alt="Ati 1" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">ati Collection 1</h3>
+          <p class="gallery-item-description">Natalvido versi IG</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/ati_2.jpeg' %}" alt="Ati 2" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Ati Collection 2</h3>
+          <p class="gallery-item-description">Artistic expression</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/ati.png' %}" alt="Ati" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Ati's Masterpiece</h3>
+          <p class="gallery-item-description">Beautiful artwork</p>
+        </div>
+      </div>
+      
+      <!-- Avenio's Images -->
+      <div class="gallery-item" data-category="recent">
+        <img src="{% static 'images/avenio_1.jpeg' %}" alt="Avenio 1" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Avenio Collection 1</h3>
+          <p class="gallery-item-description">Modern design concept</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="recent">
+        <img src="{% static 'images/avenio_2.jpeg' %}" alt="Avenio 2" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Avenio Collection 2</h3>
+          <p class="gallery-item-description">Creative vision</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="recent">
+        <img src="{% static 'images/avenio_3.jpeg' %}" alt="Avenio 3" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Avenio Collection 3</h3>
+          <p class="gallery-item-description">Digital art piece</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="recent">
+        <img src="{% static 'images/avenio.jpeg' %}" alt="Avenio" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Avenio's Work</h3>
+          <p class="gallery-item-description">Innovative design</p>
+        </div>
+      </div>
+      
+      <!-- Cania's Image -->
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/cania.jpeg' %}" alt="Cania" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Cania's Creation</h3>
+          <p class="gallery-item-description">Unique artistic style</p>
+        </div>
+      </div>
+      
+      <!-- Delio's Images -->
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/delio_1.jpeg' %}" alt="Delio 1" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Delio Collection 1</h3>
+          <p class="gallery-item-description">Contemporary artwork</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/delio_2.jpeg' %}" alt="Delio 2" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Delio Collection 2</h3>
+          <p class="gallery-item-description">Abstract design</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/delio_3.jpeg' %}" alt="Delio 3" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Delio Collection 3</h3>
+          <p class="gallery-item-description">Visual masterpiece</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/delio_4.jpeg' %}" alt="Delio 4" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Delio Collection 4</h3>
+          <p class="gallery-item-description">Elegant composition</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/delio.png' %}" alt="Delio" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Delio's Creation</h3>
+          <p class="gallery-item-description">Stunning design</p>
+        </div>
+      </div>
+      
+      <!-- Jessua's Images -->
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/jessua_1.jpeg' %}" alt="Jessua 1" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Jessua Collection 1</h3>
+          <p class="gallery-item-description">Artistic excellence</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/jessua.jpeg' %}" alt="Jessua" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Jessua's Artwork</h3>
+          <p class="gallery-item-description">Creative masterpiece</p>
+        </div>
+      </div>
+      
+      <!-- Jopra's Image -->
+      <div class="gallery-item" data-category="recent">
+        <img src="{% static 'images/jopra.jpeg' %}" alt="Jopra" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Jopra's Vision</h3>
+          <p class="gallery-item-description">Creative expression</p>
+        </div>
+      </div>
+      
+      <!-- Syma's Image -->
+      <div class="gallery-item" data-category="recent">
+        <img src="{% static 'images/syma.jpeg' %}" alt="Syma" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Syma's Work</h3>
+          <p class="gallery-item-description">Modern art piece</p>
+        </div>
+      </div>
+      
+      <!-- Tania's Images -->
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/tania_1.jpeg' %}" alt="Tania 1" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Tania Collection 1</h3>
+          <p class="gallery-item-description">Beautiful design</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="featured">
+        <img src="{% static 'images/tania.jpeg' %}" alt="Tania" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Tania's Creation</h3>
+          <p class="gallery-item-description">Artistic brilliance</p>
+        </div>
+      </div>
+      
+      <!-- Vladi's Images -->
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/vladi_1.jpeg' %}" alt="Vladi 1" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Vladi Collection 1</h3>
+          <p class="gallery-item-description">Inspirational piece</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/vladi_2.jpeg' %}" alt="Vladi 2" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Vladi Collection 2</h3>
+          <p class="gallery-item-description">Creative artwork</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/vladi_3.jpeg' %}" alt="Vladi 3" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Vladi Collection 3</h3>
+          <p class="gallery-item-description">Visual storytelling</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/vladi_4.jpeg' %}" alt="Vladi 4" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Vladi Collection 4</h3>
+          <p class="gallery-item-description">Digital artistry</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-category="popular">
+        <img src="{% static 'images/vladi.jpeg' %}" alt="Vladi" class="gallery-item-image">
+        <div class="gallery-item-info">
+          <h3 class="gallery-item-title">Vladi's Artwork</h3>
+          <p class="gallery-item-description">Inspirational creativity</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="closeLightbox">×</button>
+    <img src="" alt="Lightbox Image" class="lightbox-image" id="lightboxImage">
+  </div>
+</div>
+
+<script>
+  // Smooth scroll to gallery
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+  
+  // Filter functionality
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs
+      filterTabs.forEach(t => t.classList.remove('active'));
+      // Add active class to clicked tab
+      tab.classList.add('active');
+      
+      const filter = tab.getAttribute('data-filter');
+      
+      // Filter gallery items
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const closeLightbox = document.getElementById('closeLightbox');
+  
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const imgSrc = item.querySelector('.gallery-item-image').src;
+      lightboxImage.src = imgSrc;
+      lightbox.classList.add('active');
+    });
+  });
+  
+  closeLightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+  
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+    }
+  });
+</script>
+
+{% endblock %}

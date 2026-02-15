@@ -1,0 +1,434 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'styles/membru.css' %}">
+
+<!-- Hero Section -->
+<section class="membru-hero">
+  <div class="membru-hero-content">
+    <h1 class="membru-hero-title">Ami nia Membru</h1>
+    <p class="membru-hero-subtitle">
+      Koñese totonista sira, ho sira nia karakter
+    </p>
+  </div>
+</section>
+
+<!-- Members Section -->
+<section class="members-section">
+  <div class="members-container">
+    
+    <!-- Ati -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/ati.png' %}" alt="Ati">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Ati</h2>
+          <p class="member-role">Bonitu Jagarda</p>
+          <p class="member-bio">
+            Agora Eskola iha Jagarda(Jakarta), ugazu ne'e pernah gasta osan tunjagan eskola nian ba hola Nilou nia skin, 
+            maibe we love you bro, stay unhealthy
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>3</strong> Photos</span>
+            <span class="member-stat"><strong>Featured</strong> Gamer Kiak</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/ati_1.jpeg' %}" alt="Ati 1" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Peace Pantai Kelapa</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/ati_2.jpeg' %}" alt="Ati 2" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Side mode</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/ati.png' %}" alt="Ati" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">bapa Kos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Avenio -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/avenio.jpeg' %}" alt="Avenio">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Avenio</h2>
+          <p class="member-role">Si Paling Extra Kurikuler</p>
+          <p class="member-bio">
+            Iha team ne ugazu ne palin istoria barak, istoria nahuaan nee nia konta to ami rona baruk, mais rona dt la rona nia tolok ami aat hetnaman.
+            maibe nia ema diak, enfermeiru laran diak mais kuandu hau moras, hau sei laba nia ida <strong>SUMPAHH</strong>
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>4</strong> Photos</span>
+            <span class="member-stat"><strong>Recent</strong> Ibun Santu</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/avenio_1.jpeg' %}" alt="Avenio 1" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Urban legend</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/avenio_2.jpeg' %}" alt="Avenio 2" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Oin mina ne</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/avenio_3.jpeg' %}" alt="Avenio 3" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">molested child</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/avenio.jpeg' %}" alt="Avenio" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">nahuaan</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cania -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/cania.jpeg' %}" alt="Cania">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Cania</h2>
+          <p class="member-role">IPS Ne'ebe kolega laiha be gabung tiha ho Ami</p>
+          <p class="member-bio">
+            Nia foto artifact ladun barak, heinlai hau se buka depois mak upload,
+            nia mos ema diak, agra eskola iha Filipina, besik sai gay na sorte domingu ba hela dt missa. 
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>1</strong> Photo</span>
+            <span class="member-stat"><strong>Featured</strong> Aib F7</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/cania.jpeg' %}" alt="Cania" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Nia Tauk Busa</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Delio -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/delio.png' %}" alt="Delio">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Delio</h2>
+          <p class="member-role">Cuek LAE, Cool LAE</p>
+          <p class="member-bio">
+            Iha buat barak mk hau bele deskreve nia soke liafuan laiha, intinya bro ne SOk  cool maibe malahan cringe abuza naheran,
+            hau se hanoin bro pernah tau nia foto iha walpaper(nothing wrong with that sih) maibe fodasss o mos low mk neee.
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>5</strong> Photos</span>
+            <span class="member-stat"><strong>Popular</strong> Juiz Koruptor</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/delio_1.jpeg' %}" alt="Delio 1" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">google inus</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/delio_2.jpeg' %}" alt="Delio 2" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">buat ladun diak sih</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/delio_3.jpeg' %}" alt="Delio 3" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">"sok cool malahan cringe" moment</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/delio_4.jpeg' %}" alt="Delio 4" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">molested child part 2</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/delio.png' %}" alt="Delio" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">glow up</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Jessua -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/jessua.jpeg' %}" alt="Jessua">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Jessua</h2>
+          <p class="member-role">Fine Artist & Painter</p>
+          <p class="member-bio">
+            Pintor ho tékniku tradisionál ne'ebe refinádu. Jessua dedika ba kria obra sira ho atensaun máximu ba detalhe no kór.
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>2</strong> Photos</span>
+            <span class="member-stat"><strong>Featured</strong> Artist</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/jessua_1.jpeg' %}" alt="Jessua 1" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Classic Beauty</h3>
+            <p class="gallery-item-description">Traditional painting technique</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/jessua.jpeg' %}" alt="Jessua" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Timeless Art</h3>
+            <p class="gallery-item-description">Masterful brush work</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Jopra -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/jopra.jpeg' %}" alt="Jopra">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Jopra</h2>
+          <p class="member-role">Ema gosta nia barak termasuk avenio</p>
+          <p class="member-bio">
+            Bro ne idaman para wanita dan pria hotu feto mane hetan nia kalsa bokon hotu. 
+            Sala satu membru ida nebe mosu lakon, jadi kuandu nia mai ne berarti buat ne importante duni.
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>1</strong> Photo</span>
+            <span class="member-stat"><strong>Recent</strong> miles morales</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/jopra.jpeg' %}" alt="Jopra" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">Avenio hakiak nia tna </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Syma -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/syma.jpeg' %}" alt="Syma">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Syma</h2>
+          <p class="member-role">kecil2 cabe rawik nahuan</p>
+          <p class="member-bio">
+            labarik naheran da nene, iha kotuk nonok nia modelu hnsa delio soke versi feto and versi Lite nian, delio versi pro,
+            uluk SMA nia kolega mk: nia bin, hau, ati ho dalia(kolega husi team seluk), mak ne dt ema seluk ne hnsa npc ba nia, aneh nee
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>1</strong> Photo</span>
+            <span class="member-stat"><strong>Recent</strong> orang aneh</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/syma.jpeg' %}" alt="Syma" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">rentos starlink</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tania -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/tania.jpeg' %}" alt="Tania">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Tania</h2>
+          <p class="member-role">Syma nia Bin</p>
+          <p class="member-bio">
+            Agaza ne so ba hare'e lansun deit, le dt nia deskrisaun ne la cukup ida, 
+            ah los hau atu husu, bainhra sai Prezidente??
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>2</strong> Photos</span>
+            <span class="member-stat"><strong>Featured</strong> FUK</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/tania_1.jpeg' %}" alt="Tania 1" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">masker pink ne buka laiha na karik</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/tania.jpeg' %}" alt="Tania" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">oin uhmm ne</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Vladi -->
+    <div class="member-card">
+      <div class="member-header">
+        <div class="member-avatar">
+          <img src="{% static 'images/vladi.jpeg' %}" alt="Vladi">
+        </div>
+        <div class="member-info">
+          <h2 class="member-name">Vladi</h2>
+          <p class="member-role">Sarjana S3</p>
+          <p class="member-bio">
+            Iha ami nia gp, bro mak hasai uluk dotoramentu iha eskola Hera, jurusan Agrosocio to? ka Agronomia? lupa,
+            nia hsai phd iha kuda batar nian, atu bele batar buras ho diak. 
+          </p>
+          <div class="member-stats">
+            <span class="member-stat"><strong>5</strong> Photos</span>
+            <span class="member-stat"><strong>Popular</strong> phD in Agricultura</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member-gallery">
+        <div class="gallery-item">
+          <img src="{% static 'images/vladi_1.jpeg' %}" alt="Vladi 1" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">ah ah ah ah</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/vladi_2.jpeg' %}" alt="Vladi 2" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">uhmm yes yes</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/vladi_3.jpeg' %}" alt="Vladi 3" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">avenio pernah dehan nia oin hnsa laho LMAO HAHAHAHAHAHHA</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/vladi_4.jpeg' %}" alt="Vladi 4" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">yes daddy</h3>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="{% static 'images/vladi.jpeg' %}" alt="Vladi" class="gallery-item-image">
+          <div class="gallery-item-info">
+            <h3 class="gallery-item-title">doutor vladi</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="closeLightbox">×</button>
+    <img src="" alt="Lightbox Image" class="lightbox-image" id="lightboxImage">
+  </div>
+</div>
+
+<script>
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const closeLightbox = document.getElementById('closeLightbox');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const imgSrc = item.querySelector('.gallery-item-image').src;
+      lightboxImage.src = imgSrc;
+      lightbox.classList.add('active');
+    });
+  });
+  
+  closeLightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+  
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+    }
+  });
+</script>
+
+{% endblock %}
